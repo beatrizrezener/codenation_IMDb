@@ -4,3 +4,25 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	height: 2000px;
+}
+header {
+	background-image: url(../img/capa-madmax2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 90vh;
+	padding: 20px;
+	position: relative
+}
+.header:after { /* after content inside header */
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
