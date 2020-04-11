@@ -18,7 +18,10 @@ header {
 	background-attachment: fixed;
 	height: 90vh;
 	padding: 20px;
-	position: relative
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 	header:after { /* after content inside header */
@@ -31,15 +34,30 @@ header {
 		width: 100%;
 	}
 
+	header li a {
+		transition: all 0.2s ease-in-out; /* hover effect  */
+	}
+
+	header li a:hover {
+		color: #e4bb23;
+	}
+
+ul {
+	list-style-type: none; /* removes the bullets */
+	margin: 0; /* removes browser default settings  */
+	padding: 0;  /* removes browser default settings  */
+}
+
+li a {
+	text-decoration: none;
+}
+
 nav {
 	z-index: 2;
 	display: flex;
 }
 
 	nav ul {
-		list-style-type: none; /* removes the bullets */
-		margin: 0; /* removes browser default settings  */
-		padding: 0;  /* removes browser default settings  */
 		display: flex;
 	}
 
@@ -51,21 +69,19 @@ nav {
 		color: white;
 		font-size: 1.3em;
 		font-weight: bold;
-		text-decoration: none;
 		text-transform: uppercase;
 		transition: all 0.2s ease-in-out; /* hover effect  */
 	}
 
-	nav li a:hover {
-		color: #e4bb23;
+	nav .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 .container {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
 	position: relative;
-	max-width: 960px;
+	width: 960px;
 	margin: 0 auto;
 }
 
@@ -86,4 +102,68 @@ nav {
 	color: white;
 	font-size: 1.3em;
 	font-weight: bold;
+}
+
+.trailer-button {
+	background-color: #e4bb23;
+	border: none;
+	padding: 16px 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.trailer-button:hover {
+    background-color: #bc9a1d;
+}
+
+.trailer-button i {
+	font-size: 1.5em;
+    right: 15px;
+	top: 12px;
+	position: absolute;
+}
+
+.roundedButton {
+	border-radius: 50px;
+}
+
+.date {
+	color: #bc9a1d;
+}
+
+.featured-movie {
+	z-index: 2;
+}
+
+	.featured-movie ul {
+		display: flex;
+		font-size: 13px;
+		margin: 15px 0 30px 0;
+	}
+
+	.featured-movie li {
+		margin-right: 15px;
+	}
+
+	.featured-movie li a {
+		color: white;
+	}
+
+	.featured-movie h2 {
+		color: #fff;
+		font-size: 6.5em;
+		font-weight: bold;
+		line-height: 1.2em;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+.featured-movie .info {
+	font-size: 1.4em;
+	color: #fff;
+	padding: 21px 0;
 }
