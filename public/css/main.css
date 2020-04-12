@@ -6,7 +6,6 @@
 }
 
 body {
-	height: 2000px;
 	font-size: 10px;
     font-family: "Montserrat", sans-serif;
 }
@@ -167,3 +166,50 @@ nav {
 	color: #fff;
 	padding: 21px 0;
 }
+
+footer {
+	background-color: #fff;
+    color: #bababa;
+    padding: 20px 0;
+    text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+	footer ul {
+		display: flex;
+		align-items: center;
+		font-size: 2.5em;
+	}
+
+		footer ul li {
+			margin-left: 40px;
+		}
+
+			footer ul li a {
+				color: #bababa;
+				
+			}
+
+	footer a .fa {
+		transition: all 0.2s ease-in-out;
+	}
+
+	footer a .fa-twitter:hover {
+		color: #55acee;
+	}
+
+	footer a .fa-facebook-official:hover {
+		color: #3b5998;
+	}
+
+	footer a .fa-instagram:hover {
+		color: #e95950;
+	}
+
+.catalog {
+	height: 100px;
+	background-color: #f2f2f2;
+}
+	
